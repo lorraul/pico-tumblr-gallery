@@ -17,7 +17,7 @@ This plugin for Pico CMS creates galleries from tagged Tumblr image posts.
 $config['PicoTumblrGallery'] = array(
  'enabled' => true,
  'api_key' => '', // set this to your app's OAuth Consumer Key
- 'blog'=>'' // set to the address of your tumblr, ex: xyz.tumblr.com
+ 'blog'=>'' // set to the address of the source tumblr, ex: xyz.tumblr.com
 );
 ```
 
@@ -41,7 +41,7 @@ This will return to twig all the different formats and the caption (see below) o
 You can now use the returned data in your custom templates and layouts. To iterate over all the returned images:
 ```twig
 {% for image in gallery %}
-    {{ image.url_500 }}
+    <img src="{{ image.url_500 }}"> {{image.caption}} <hr>
 {% endfor %}
 ```
 
