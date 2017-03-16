@@ -1,8 +1,8 @@
-#Pico Tumblr Gallery
+# Pico Tumblr Gallery
 
 This plugin for Pico CMS creates galleries from tagged Tumblr image posts.
 
-##Install
+## Install
 
 * Register a new Tumblr application [here](https://www.tumblr.com/oauth/apps) and get the *OAuth Consumer Key* of the newly created app.
 
@@ -21,7 +21,7 @@ $config['PicoTumblrGallery'] = array(
 );
 ```
 
-##Usage
+## Usage
 
 Add a new header tag `Gallery: tag` to the page where you want to show the gallery. Change its value to the tag you want to filter for the images coming from Tumblr.
 
@@ -36,7 +36,7 @@ Gallery: logo
 ```
 This will return to twig all the different formats and the caption (see below) of the images you've posted on tumblr with the tag `logo`.
 
-###Theme integration
+### Theme integration
 
 You can now use the returned data in your custom templates and layouts. To iterate over all the returned images:
 ```twig
